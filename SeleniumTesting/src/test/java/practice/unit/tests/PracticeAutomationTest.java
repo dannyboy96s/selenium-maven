@@ -70,6 +70,7 @@ public class PracticeAutomationTest {
             // get the last element and add it to the cart
             if(i == productBoxList.size()-1) {
                 final String xpathAddToCart = "//input[@class='btn btn-cart btn-small']";
+                System.out.println("item to be added to cart:" + productBoxDesc.getText());
                 productBoxList.get(i).findElement(By.xpath(xpathAddToCart)).click();
             }
         }
