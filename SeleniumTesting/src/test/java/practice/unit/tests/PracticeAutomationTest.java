@@ -24,7 +24,7 @@ public class PracticeAutomationTest {
      * then select the last item and add it to the cart,
      * then finally remove it for the cart.
      *
-     * @Exception Interrupted Exception
+     * @throws Interrupted Exception
      *
      */
     @Test
