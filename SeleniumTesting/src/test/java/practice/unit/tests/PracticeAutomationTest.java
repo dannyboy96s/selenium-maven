@@ -57,7 +57,7 @@ public class PracticeAutomationTest {
             // for each element, grab the description
             WebElement productBoxDesc = productBoxList.get(i).findElement(By.className("description"));
 
-            // assert - check if all product box titles contain 'Title' keyword
+            // assert - check if all product box titles contain 'Table' keyword
             assertThat("Error message: does not contains keyword 'Table' ",productBoxDesc.getText(), containsString(textToMatch));
 
             if(productBoxDesc.getText().contains(textToMatch)) {
@@ -80,7 +80,7 @@ public class PracticeAutomationTest {
         //driver.switchTo().activeElement().findElement(By.xpath(xpathModalPopup)).click();
 
 
-        // sleep for 6 seconds, wait for modal pop up animation to disappear (im assuming the animation lasts 5 seconds)
+        // sleep for 6 seconds (not ideal to use thread.sleep), wait for modal pop up animation to disappear (im assuming the animation lasts 5 seconds)
         // then click the main cart button
         Thread.sleep(6000);
         final String xpathCartBtn = "//a[@class='menu-btn']";
